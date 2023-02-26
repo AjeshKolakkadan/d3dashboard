@@ -1,0 +1,20 @@
+<div class="card infoCard">
+    <div class="card-content">
+        <div class="card-body cleartfix">
+            <ul class="icons"><li></li><li></li><li></li></ul>
+            <div class="media align-items-vert">
+                <div class="align-self-center cardBox">
+                    <h1 *ngIf="!chart" class="mr-2">45</h1>
+                    <app-radial *ngIf="chart" [progress]="progress" [totalCount]="totalCount"
+                        [colorCode]="colorCode"></app-radial>
+                </div>
+                <div class="media-body">
+                    <span>{{text}}</span>
+                </div>
+                <div class="align-self-center">
+                    <i class="icon-wallet success font-large-2"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rightNav{
+    li{
+        list-style: none;
+        float: left;
+        padding-left: 15px;
+        img{
+            width: 20px;
+        }
+    }
+}
+.navbar-brand{
+    img{
+        width:120px ;
+    }
+}

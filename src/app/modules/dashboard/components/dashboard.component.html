@@ -1,0 +1,61 @@
+<div class="dashBoard">
+    <section class="infoCards">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <app-infocard [chart]="false" [text]="'Total Number of Tasks'"></app-infocard>
+                </div>
+                <div class="col">
+                    <app-infocard [progress]="60" [totalCount]="45"
+                    [colorCode]="'#39803d'" [chart]="true" [text]="'Number of Tasks on Track'"></app-infocard>
+                </div>
+                <div class="col">
+                    <app-infocard [progress]="75" [totalCount]="50"
+                    [colorCode]="'#d1b383'" [chart]="true" [text]="'Number of Tasks Delayed'"></app-infocard>
+                </div>
+                <div class="col">
+                    <app-infocard [progress]="35" [totalCount]="33"
+                    [colorCode]="'#cb334c'" [chart]="true" [text]="'Number of Tasks Signoficiant Delayed'"></app-infocard>
+                </div>
+                <div class="col">
+                    <app-infocard [progress]="45" [totalCount]="12"
+                    [colorCode]="'#295b66'" [chart]="true" [text]="'Number of Tasks Completed'"></app-infocard>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="taskCard mt30">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="chartCard">
+                        <div class="ccHead">
+                            <h3>Tasks Distribution</h3>
+                        </div>
+                        <div class="ccChart">
+                            <app-donut></app-donut>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="chartCard">
+                        <div class="ccHead">
+                            <h3>Tasks by Beinex Sector</h3>
+                        </div>
+                        <div class="ccChart">
+                            <app-barchart></app-barchart>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="chartCard">
+                        <div class="ccHead">
+                            <h3>Tasks by Auraa</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

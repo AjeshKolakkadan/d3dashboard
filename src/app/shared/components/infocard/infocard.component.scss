@@ -1,0 +1,47 @@
+.infoCard {
+    border: none;
+    border-left: 4px solid;
+    border-color: var(--secondary);
+    box-shadow: 0 10px 40px 0 rgb(62 57 107 / 7%), 0 2px 9px 0 rgb(62 57 107 / 6%);
+
+    .media.align-items-vert {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        span {
+            font-size: 12px;
+        }
+
+        .cardBox {
+            margin: 0;
+            padding-right: 10px;
+
+            h1 {
+                font-size: 40px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .icons {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        transform: rotate(90deg);
+        cursor: pointer;
+        li {
+            background: none repeat scroll 0 0 black;
+            height: 2px;
+            width: 2px;
+            line-height: 0;
+            list-style: none outside none;
+            margin-top: 3px;
+            vertical-align: top;
+            border-radius: 50%;
+        }
+    }
+
+}

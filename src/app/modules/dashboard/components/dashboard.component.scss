@@ -1,0 +1,30 @@
+section.infoCards {
+    .col:first-child {
+        padding-left: 0px;
+    }
+
+    .col:last-child {
+        padding-right: 0px;
+    }
+}
+section.taskCard{
+    .col-4:first-child {
+        padding-left: 0px;
+    }
+
+    .col-4:last-child {
+        padding-right: 0px;
+    }
+    .chartCard{
+        .ccHead{
+            h3{
+                font-size: 18px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .ccChart{
+            margin-top: 30px;
+        }
+    }
+}
